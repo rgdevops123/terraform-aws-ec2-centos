@@ -55,13 +55,13 @@ variable "monitoring" {
 variable "vpc_security_group_ids" {
   description = "A list of security group IDs to associate with."
   type        = list(string)
-  default     = ["sg-0de7ba70ec355cc6b"]
+  default     = ["sg-<YOUR_SECURITY_GROUP_ID>"]
 }
 
 variable "subnet_id" {
   description = "The VPC Subnet ID to launch in."
   type        = string
-  default     = "subnet-b1ff9fcb"
+  default     = "subnet-<YOUR_SUBNET_ID>"
 }
 
 variable "associate_public_ip_address" {
