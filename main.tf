@@ -36,7 +36,7 @@ resource "aws_instance" "this" {
       type     = "ssh"
       user     = "centos"
       password = ""
-      private_key = "${file("~/user1.pem")}"
+      private_key = "${file(var.private_key_file)}"
       host = "${self.public_ip}"
     }
 
