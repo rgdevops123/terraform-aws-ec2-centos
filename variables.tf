@@ -1,13 +1,13 @@
 variable "region" {
   description = "Region to be used."
   type        = string
-  default     = "us-east-2"
+  default     = "us-east-1"
 }
 
 variable "shared_credentials_file" {
   description = "Credentials file."
   type        = string
-  default     = "/home/ansible/.aws/credentials"
+  default     = "/home/terraform/.aws/credentials"
 }
 
 variable "profile" {
@@ -25,7 +25,7 @@ variable "name" {
 variable "instance_count" {
   description = "Number of instances to launch."
   type        = number
-  default     = 3
+  default     = 1
 }
 
 variable "ami" {
